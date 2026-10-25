@@ -1,0 +1,291 @@
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+% Professional links (no colors/boxes)
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+% Darker text font compatible with older LaTeX kernels
+\usepackage{times}
+% Improve character protrusion and expansion for crisper text
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{5pt}
+\geometry{left=0.8cm, top=0.8cm, right=0.8cm, bottom=0.8cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+% Removed tcolorbox-based section styling for a cleaner resume layout
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\itemsep}{0pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{:\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-3mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\item[] \hspace{-2ex} \textbf{#1:} #2 \vspace{-3pt}}
+
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{\textbullet}
+\setlist[itemize]{leftmargin=*, labelsep=1mm, itemsep=1mm, topsep=1pt}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1.2mm, label={}]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=2ex, rightmargin=2ex, noitemsep, labelsep=1.2mm, itemsep=1mm, label=\textbullet]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+% (Removed custom cvsection box; using titlesec formatting instead)
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{First Name Last Name} % Your Name
+\newcommand{\course}{Bachelor of Technology} % Your Course
+\newcommand{\roll}{Your Roll No} % Your Roll No.
+\newcommand{\phone}{Your Phone Number} % Your Phone Number
+\newcommand{\emaila}{your email} %Email 1
+\newcommand{\emailb}{your email} %Email 2
+\newcommand{\github}{your GitHub link} %Github
+%\newcommand{\website}{https://www.yourwebsite.com} %Website
+\newcommand{\linkedin}{your linkedIn link} %linkedin
+
+
+
+
+\begin{document}
+
+%----------HEADING-----------------
+
+\begin{center}
+    {{\fontsize{26}{28}\selectfont \scshape \textbf{Banseedhar Gondaliya}}} \\ \vspace{3pt}
+    \small 
+    \textcolor{black}{\raisebox{-0.1\height} \faPhone\ 9537882685} ~ 
+    \href{mailto:banseedhargondaliya786@gmail.com}{\textcolor{black}{\raisebox{-0.1\height}\faEnvelope\ banseedhargondaliya786@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/banseedhar-g-b84472193/}{\textcolor{black}{\raisebox{-0.1\height}\faLinkedin\ Banseedhar}}  ~
+    \href{https://github.com/Banseedhar01}{\textcolor{black}{\raisebox{-0.1\height}\faGithub\ Banseedhar01}}
+    \vspace{-8pt}
+\end{center}
+
+\vspace{-4pt}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+\resumeSubHeadingListStart
+\vspace{-2pt} 
+
+      \resumeSubheading
+      {IDFC FIRST Bank}{Bengaluru, India}
+      {{ML Engineer} $|$ {Gen AI Team}}{April 2026 - current}
+\vspace{-1pt}
+      \resumeItemListStart
+      \item {Building enterprise-grade \textbf{Agentic AI} and \textbf{GenAI} solutions using LangGraph, DeepAgents, AWS AgentCore, and LLM orchestration frameworks to enable intelligent automation across banking applications.}
+      \resumeItemListEnd
+
+     \vspace{-5pt}    
+
+    \resumeSubheading
+     {Samsung Research and Development}{Bengaluru, India}
+     {{Senior Machine Learning Engineer - Full-time} $|$ {AI Productization Team}}{August 2023 - March 2026}
+\vspace{-1.5pt}
+      \resumeItemListStart
+        \item 
+       { \textbf{Generative AI \& Agentic AI:}
+        \begin{itemize} [leftmargin=2mm, noitemsep]
+           \item Engineered a production-scale Screen \textbf{AI Agent} using hybrid \textbf{RAG} (vector + keyword retrieval) and \textbf{LLM}-based task planning to interpret UI context and deliver dynamic interactive guidance, reducing task completion time by \textbf{55\%} and enabling commercial deployment alongside an \textbf{ICVGIP 2025} publication and a granted Samsung \textbf{A1 patent}.
+           \item Fine-tuned the \textbf{Qwen2.5-Coder-32B-Instruct} using full fine-tuning and \textbf{LoRA} to enable structured UI reasoning and generation, empowering \textbf{agentic systems} to convert natural language plans into dynamic, interactive \textbf{UI workflows}.
+          %  \item Developed \textbf{Generative AI solutions} for summarization and translation, leveraging \textbf{LLMs for Bixby’s Android integration}, enhancing user interaction capabilities and language understanding.
+          
+        \end{itemize}
+       }
+      
+      \item 
+      { \textbf{Natural Language Processing(NLP):}
+      \begin{itemize} [leftmargin=2mm, noitemsep]
+
+       \item Designed and implemented an \textbf{entity classification model} for user interaction commands (address, email, event, phone, URL, etc.) using \textbf{ReTVec, TinyBERT, and LSTM}, achieving \textbf{96\%} accuracy; commercialized in the ODCR module with \textbf{9 multilingual support}.
+
+        \item Developed a \textbf{relationship prediction model} using conversational and behavioral data (calls, messages, interactions), leveraging \textbf{ML and NLP models (LSTM, BiLSTM, BERT)} to achieve \textbf{95\%} accuracy across \textbf{7 classes}; the innovation resulted in a \textbf{granted patent}.
+        % Designed and implemented an \textbf{OCR text denoising} solution using \textbf{encoder-decoder} architectures \textbf{(RNN, Transformer)}, significantly improving text recognition accuracy by \textbf{91\%}.
+        \end{itemize}
+      }
+
+    \item
+      { \textbf{Computer Vision (CV):}
+      \begin{itemize} [leftmargin=2mm, noitemsep]
+          \item Contributed to the development of \textbf{Screen AI and AI Select} technologies using on-screen \textbf{object detection} (e.g., timestamps, keyboards, maps) with \textbf{YOLO}, achieving an inference time of \textbf{150ms} and reducing the model size from \textbf{20MB to 1.5MB}. 
+          \item Integrated the optimized UI element detection model into \textbf{On-Device Context Retriever (ODCR)} module to reduce textual noise and enhance \textbf{entity extraction} like phone numbers, emails, addresses, URLs, etc., enabling smart suggestions.
+        \end{itemize}
+      }  
+       
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-6pt}
+
+
+  
+\vspace{-8pt}
+
+%-----------EDUCATION-----------------
+
+\section{\textbf{Education}}
+\resumeSubHeadingListStart
+\vspace{-2pt}
+    \resumeSubheading
+      {National Institute Of Technology Surat}{Surat, India}
+      {Bachelor of Technology in Computer Science and Engineering, CGPA: \textbf{9.04} }{August 2019 - May 2023}
+  \resumeSubHeadingListEnd
+\vspace{-8pt} 
+
+%-----------PUBLICATIONS & PATENTS-----------------
+
+\section{\textbf{Publications \& Achievements}}
+\resumeSubHeadingListStart
+\vspace{-2pt}
+\resumePOR{\small Publication: }{\small ``Screen2UI: Pixel-Only On-Device UI Hierarchy Generation,'' accepted at ICVGIP 2025.}{}
+\resumePOR{\small Publication: }{\small ``Who's Related? Fast and Accurate Family Relationship Detection in Conversations,'' accepted at ICASSP 2026.}{}
+\resumePOR{\small Patent: }{\small ``System and Method for Adaptive User Interface Analysis and Dynamic Interactive Task Guidance.''}{}
+\resumePOR{\small Samsung AI Expert (Workera): }{\small Core 1--4 certified (Mathematics for AI, ML, DL, CV, Diffusion Models, PyTorch, Prompt Engineering).}{}
+% \resumePOR{\small Samsung Software Competency Test: }{\small Cleared Samsung Software Competency Test (Advanced \& Professional levels).}{}
+
+\resumeSubHeadingListEnd
+
+\vspace{-6pt}
+
+%-----------SKILLS-----------------
+
+\section{\textbf{Technical Skills}}
+% \vspace{-2pt}
+\resumeHeadingSkillStart
+  \resumeSubItem{\small Machine Learning, Deep Learning \& AI}{
+  \small Agentic AI (LangGraph, LangChai, CrewAI, OpenAI-API, LlamaIndex, Retrieval-Augmented Generation (RAG), Pinecone, Vector DBs), NLP and Computer vision (Neural Networks, CNN, LSTM, Transformers, BERT), 
+  ML Supervised Learning,
+  % (Regression, Decision Trees, Random Forests, SVM, Clustering: K-means, XGBoost) 
+  Large Language Models (LLMs), Generative AI, Named Entity Recognition (NER)}
+\vspace{-4 pt}
+
+  \resumeSubItem{\small Programming Languages and  Frameworks/Libraries}{\small Python, C, C++, SQL, TensorFlow, PyTorch, Keras, Hugging Face, Scikit-learn, OpenCV, Agentic-AI (CrewAI, N8N), NumPy, Pandas, Matplotlib, Seaborn, NLTK, SpaCy}
+\vspace{-4 pt}
+
+  \resumeSubItem{\small Big Data \& Cloud Technologies}{\small Google Cloud (Vertex AI), AWS (S3, SageMaker) 
+  , Hadoop, Spark
+  }
+\vspace{-4 pt}
+
+  \resumeSubItem{\small Model Deployment \& Optimization}{\small On-Device AI, TensorRT, TFLite, ONNX, Flask, FastAPI, Docker, Kubernetes}
+\vspace{-4 pt}
+
+  \resumeSubItem{\small Additional Developer Tools}{\small Git, Github, Linux, MySQL, MongoDB}
+
+\resumeHeadingSkillEnd
+
+\vspace{-10pt}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+\vspace{-2pt}
+
+    \resumeProject
+      {FinPilot Financial Advisor: Personalized Wealth Management through Multi-Agent AI} %Project Name
+      {Multi Agent AI | LangGraph, LangChain, Pinecone, RAG, OpenAI API, LlamaIndex} %Project Name, Location Name
+      {} %Event Dates
+    {\href{https://github.com/Banseedhar01/Fin-Pilot}{\textbf{\textcolor{black}{Github}}}}
+
+      % \vspace{-5 pt} 
+      
+      \resumeItemListStart
+        \item {Built a \textbf{multi-agent} Financial Advisor AI system with specialized \textbf{agents (Portfolio Analyzer, Finance Query Box, Watchlist Analyzer)} for intelligent investment insights, real-time monitoring, and personalized portfolio analysis.}
+        \item {Implemented a scalable multi-agent orchestration framework using \textbf{LangGraph, OpenAI API, RAG, Binance API, Tavily web search, and financial document parsing,} reducing manual financial data processing effort by 60\%.}
+    \resumeItemListEnd
+   
+\resumeSubHeadingListEnd
+
+\vspace{-10pt}
+
+\section{\textbf{Positions of Responsibility}}
+\resumeSubHeadingListStart
+\vspace{-2pt}
+
+\resumeSubheading
+    {Mentor and Relationship Manager}{}
+      {{Samsung Research and Development} $|$ {OnDevice AI Team}}{May 2024 - Nov 2024}
+      % \vspace{-2 pt}
+      {\small \parbox {\textwidth}{Mentorship of \textbf{2-Month} and \textbf{6-Month interns}, guiding them on AI/ML projects, coding best practices, and \textbf{industry workflows.}}} 
+  \resumeSubHeadingListEnd   
+
+\vfill
+\end{document}
+
+
+
+
+
+

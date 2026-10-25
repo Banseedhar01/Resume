@@ -1,0 +1,264 @@
+
+%-------------------------------------------
+%   Australian-Style 2-Page Resume Template
+%-------------------------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+%---- Packages ----
+\usepackage{latexsym}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+
+%---- Page setup ----
+\geometry{left=1.2cm, top=1.5cm, right=1.2cm, bottom=1.5cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\setlength{\footskip}{13.6pt}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+%---- Section formatting ----
+%-------------------------------------------
+% Enhanced Section Title Formatting (Bolder & Slightly Larger)
+%-------------------------------------------
+\titleformat{\section}{
+  \vspace{-12pt}\bfseries\scshape\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+
+%---- Custom commands ----
+\newcommand{\resumeSubheading}[4]{
+\vspace{1mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} & \footnotesize{#2} \\
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=2.5ex, rightmargin=2ex, itemsep=0.4mm, label=\textbullet]\small}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0.3mm}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+    {{\fontsize{26}{28}\selectfont \scshape \textbf{Banseedhar Gondaliya}}} \\ \vspace{3pt}
+    \small
+    \faPhone~9537882685 \hspace{1em}
+    \faEnvelope~\href{mailto:banseedhargondaliya786@gmail.com}{banseedhargondaliya786@gmail.com} \hspace{1em}
+    \faLinkedin~\href{https://www.linkedin.com/in/banseedhar-g-b84472193/}{Banseedhar} \hspace{1em}
+    \faGithub~\href{https://github.com/Banseedhar01}{Banseedhar01}
+\end{center}
+
+\vspace{2pt}
+%-------------------------------------------
+\section*{Professional Summary}
+Results-driven \textbf{Machine Learning Engineer} with expertise in \textbf{Deep Learning, Generative AI, and Agentic AI}.
+Experienced in building scalable, production-grade solutions across \textbf{Natural Language Processing (NLP)}, \textbf{Computer Vision}, and
+\textbf{multi-agent orchestration}. Holds multiple \textbf{patents} and \textbf{peer-reviewed publications}, with a strong focus on translating
+cutting-edge AI research into real-world impact.
+
+%-------------------------------------------
+% \section*{Professional Summary} % Research-Oriented (for R&D or academic AI labs)
+% Innovative \textbf{Machine Learning Engineer} specializing in \textbf{Generative and Agentic AI}, with a strong foundation in
+% \textbf{Deep Learning, NLP, and Computer Vision}. Experienced in developing scalable AI systems and conducting applied research
+% leading to \textbf{patented technologies} and \textbf{peer-reviewed publications}. Dedicated to bridging the gap between
+% \textbf{AI research and deployment} through robust, production-ready solutions.
+
+\vspace{3pt}
+%-------------------------------------------
+\section{Experience}
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{IDFC FIRST Bank}{Bengaluru, India}
+{Machine Learning Engineer | Gen AI Team}{April 2026 – Present}
+\resumeItemListStart
+\item Developed an \textbf{enterprise-grade autonomous agentic AI system} using \textbf{LangGraph, DeepAgents, and AWS AgentCore} that trains, tunes, evaluates, explains, and reports \textbf{banking fraud detection models} from natural language instructions, orchestrating \textbf{task planning, specialized agent delegation, tool execution, memory, and skills} to automate the end-to-end ML lifecycle.
+\item Building a \textbf{query agent} using \textbf{LangGraph and AWS AgentCore} to fetch data from \textbf{datamarts} (bureau, credit card, loans, etc.) from natural language queries, leveraging \textbf{datamart metadata as semantic context} for columns/tables and \textbf{Neo4j graph-based code context} within a \textbf{multi-step agentic system} for accurate query generation.
+\resumeItemListEnd
+
+\vspace{-6pt}
+\resumeSubheading
+{Samsung Research and Development}{Bengaluru, India}
+{Senior Machine Learning Engineer | AI Productization Team}{Aug 2023 – Present}
+\resumeItemListStart
+\item \textbf{Generative AI \& Agentic AI:}
+  \begin{itemize}[leftmargin=2mm,noitemsep]
+  \item Engineered a \textbf{Screen AI Agent} integrating LLMs with \textbf{UI understanding} (element detection, icon classification, view hierarchy), reducing task time by 55\% and improving user satisfaction; outcomes include an \textbf{ICVGIP 2025 paper}, a granted \textbf{Samsung AI patent}, and feature release as \textbf{Dynamic Interactive Task Guidance}.
+  \item Fine-tuned Qwen2.5-Coder-32B-Instruct (0.5B parameters) using full \textbf{fine-tuning} and \textbf{LoRA(Low-Rank Adaptation)} to bridge LLM natural language responses to \textbf{dynamic UI representations}, enabling seamless rendering of interactive user interfaces.
+  \item Developed \textbf{Generative AI solutions} for summarization and translation using \textbf{LLMs for Bixby’s Android integration}, enhancing contextual interaction and language understanding.
+  \end{itemize}
+
+\item \textbf{Natural Language Processing(NLP) \& Data Science:}
+  \begin{itemize}[leftmargin=2mm,noitemsep]
+    \item Built an \textbf{event classification model} for user interaction commands (address, email, event, phone, URL, etc.) using \textbf{ReTVec, TinyBERT, and LSTM}, achieving 96\% accuracy; commercialized in the \textbf{ODCR module} with support for 9 languages.
+    \item Developed a \textbf{relationship prediction model} using conversational and behavioral data (calls, messages), leveraging \textbf{LSTM, BiLSTM, BERT}, achieving 95\% accuracy across 7 classes; innovation resulted in a \textbf{granted patent}.
+    \item Designed and implemented an \textbf{OCR text denoising} solution using \textbf{encoder-decoder} architectures \textbf{(RNN, Transformer)}, significantly improving text recognition accuracy by \textbf{91\%}.
+\end{itemize}
+
+\item \textbf{Computer Vision (CV):}
+  \begin{itemize}[leftmargin=2mm,noitemsep]
+    \item Contributed to the development of \textbf{Screen AI and AI Select} technologies using on-screen \textbf{object detection} (e.g., timestamps, keyboards, maps) with YOLO, achieving an inference time of \textbf{150ms} and reducing the model size from \textbf{20MB to 1.5MB}.
+    \item Integrated the optimized UI element detection model into \textbf{On-Device Context Retriever (ODCR)} module to reduce textual noise and enhance \textbf{entity extraction} like phone numbers, emails, addresses, URLs, etc., enabling smart suggestions.
+    \end{itemize}
+\resumeItemListEnd
+
+\vspace{-6pt}
+\resumeSubheading
+{Samsung Research and Development}{Bengaluru, India}
+{Software Developer Engineer - Intern | OnDevice AI Team}{May 2022 - July 2022}
+\resumeItemListStart
+\item Worked on designing and implementing a versatile \textbf{Machine Learning model for Human Activity Recognition (HAR)} using sensor data from wearable devices.
+\item Conducted extensive research and evaluation of multiple HAR methodologies to ensure high functionality and accuracy standards.
+\item Developed a \textbf{Deep Learning-based solution} leveraging a \textbf{Dimension Adaptive Neural Architecture}, achieving an impressive \textbf{92.7\% accuracy} across 13 human activity classes.
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+%-------------------------------------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{National Institute of Technology, Surat}{Surat, India}
+{Bachelor of Technology in Computer Science and Engineering | CGPA: \textbf{9.04}, 7\textsuperscript{th} rank in Department}{Aug 2019 – May 2023}
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+%-------------------------------------------
+\section{Publications \& Patents}
+\vspace{3pt}
+\resumeItemListStart
+\item \textbf{Publication:} “Who’s Related? Fast and Accurate Family Relationship Detection in Conversations,” \textbf{ICASSP 2026}, Barcelona, Spain. \hfill \href{https://ieeexplore.ieee.org/document/11463817}{\textbf{\textcolor{black}{[Link]}}}
+\item \textbf{Publication:} “Screen2UI: Pixel-Only On-Device UI Hierarchy Generation,” \textbf{ICVGIP 2025}. \hfill \href{https://www.researchgate.net/publication/411051942_Screen2UI_Pixel-Only_On-Device_UI_Hierarchy_Generation}{\textbf{\textcolor{black}{[Link]}}}
+\item \textbf{Patent:} “System and Method for Adaptive User Interface Analysis and Dynamic Interactive Task Guidance”
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+%-------------------------------------------
+
+\section{Achievements}
+\resumeItemListStart
+\vspace{3pt}
+\item \textbf{MD Special Recognition Award (Samsung R\&D Institute India – Bangalore):}
+Recognized for outstanding contribution to \textbf{Bixby 3.0 LLM-powered voice control} and advancements in \textbf{AI \& NLP technologies}. \hfill \textit{\footnotesize{Feb 2025}}
+
+\item \textbf{Samsung Excellence Award – Team Awesome Award:}
+Awarded for exceptional teamwork and contribution to the \textbf{OnDevice AI Team's innovation journey} at Samsung R\&D Bangalore. \hfill \textit{\footnotesize{July 2024}}
+\item \textbf{Samsung AI Expert (Workera):}
+Core-1: Mathematics for AI, Probability and Statistics, Prompt Engineering;
+Core-2: Machine Learning, Deep Learning, AI Fairness, PyTorch, TensorFlow;
+Core-3: Computer Vision;
+Core-4: Diffusion Models.
+
+\item \textbf{JEE Mains:} Achieved 99.28 percentile among 900,000 candidates, securing an All-India Rank of 8420.
+\resumeItemListEnd
+\vspace{-8pt}
+%-------------------------------------------
+\section{Technical Skills}
+\small
+\resumeSubHeadingListStart
+
+% Machine Learning, Deep Learning & AI
+\resumeSubheading
+{Machine Learning, Deep Learning \& AI:}{}{}{}
+\vspace{-10pt}
+\resumeItemListStart
+\item Agentic AI (LangGraph, LangChain, CrewAI, OpenAI API, LlamaIndex, Retrieval-Augmented Generation (RAG), Pinecone, Vector DBs)
+\item NLP and Computer Vision (Neural Networks, CNN, LSTM, Transformers, BERT)
+\item Supervised \& Unsupervised Learning (Regression, Decision Trees, Random Forests, SVM, Clustering: K-Means, XGBoost)
+\item Large Language Models (LLMs), Generative AI, Named Entity Recognition (NER)
+\resumeItemListEnd
+\vspace{-6pt}
+
+% Programming Languages & Frameworks
+\resumeSubheading
+{Programming Languages \& Frameworks/Libraries:}{}{}{}
+\vspace{-10pt}
+\resumeItemListStart
+\item Python, C, C++, SQL, TensorFlow, PyTorch, Keras, Hugging Face, Scikit-learn, OpenCV
+\item Agentic-AI (CrewAI, N8N), NumPy, Pandas, Matplotlib, Seaborn, NLTK, SpaCy
+\resumeItemListEnd
+\vspace{-6pt}
+
+% Big Data & Cloud
+\resumeSubheading
+{Big Data \& Cloud Technologies:}{}{}{}
+\vspace{-10pt}
+\resumeItemListStart
+\item Google Cloud (Vertex AI), AWS (S3, SageMaker), Hadoop, Spark
+\resumeItemListEnd
+\vspace{-6pt}
+
+% Model Deployment & Optimization
+\resumeSubheading
+{Model Deployment \& Optimization:}{}{}{}
+\vspace{-10pt}
+\resumeItemListStart
+\item On-Device AI, TensorRT, TFLite, ONNX, Flask, FastAPI, Docker, Kubernetes
+\resumeItemListEnd
+\vspace{-6pt}
+
+% Developer Tools
+\resumeSubheading
+{Developer Tools:}{}{}{}
+\vspace{-10pt}
+\resumeItemListStart
+\item Git, GitHub, Linux, MySQL, MongoDB
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+%-------------------------------------------
+%-------------------------------------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{FinPilot Financial Advisor – Personalized Wealth Management through Multi-Agent AI}
+{\href{https://github.com/Banseedhar01/Fin-Pilot}{\textbf{\textcolor{black}{GitHub}}}}
+{LangGraph, LangChain, Pinecone, RAG, OpenAI API, LlamaIndex}{}
+\resumeItemListStart
+\item Built a \textbf{multi-agent financial advisor AI system} with specialized \textbf{agents (Portfolio Analyzer, Finance Query Box, Watchlist Analyzer)} for intelligent investment insights, real-time monitoring, and personalized portfolio analysis.
+\item Developed a scalable \textbf{multi-agent orchestration framework} using \textbf{LangGraph, OpenAI API, RAG, Binance API, Tavily web search, and financial document parsing}, reducing manual financial data processing effort by 60\%.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-------------------------------------------
+\section{Positions of Responsibility}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Mentor \& Relationship Manager}{}
+{Samsung Research and Development | OnDevice AI Team}{May 2024 – Nov 2024}
+\resumeItemListStart
+\item Mentored 2-month and 6-month interns, providing end-to-end guidance on \textbf{AI/ML project design}, model development, and \textbf{deployment workflows}; facilitated best practices in coding, experimentation, and collaborative research within the Intelligent Platform Team.
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
